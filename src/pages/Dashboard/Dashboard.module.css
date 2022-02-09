@@ -1,0 +1,10 @@
+.mainContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboardTitle {
+    text-align: center;
+    padding: 35px 0px;
+}
