@@ -22,7 +22,7 @@ const UserTable: React.FC<Props> = (props) => {
 
     useEffect(() => {
         dispatch(getUserList());
-    }, []);
+    }, [dispatch]);
 
     const changeSortDirection = (sortDirection: SortDirection) => {
         if (sortDirection === 'asc' as SortDirection) {

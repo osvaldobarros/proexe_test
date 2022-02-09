@@ -27,7 +27,7 @@ const DeleteUserModal: React.FC<Props> = (props: Props) => {
         } else if (wasDeletingUser) {
             closeModal();
         }
-    }, [deleteUserError, deletingUser]);
+    }, [deleteUserError, deletingUser, closeModal, wasDeletingUser]);
 
     const remove = (userId: string) => {
         dispatch(deleteUser(userId));

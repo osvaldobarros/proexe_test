@@ -27,7 +27,7 @@ const EditUserModal: React.FC<Props> = (props: Props) => {
         } else if (wasEditingUser) {
             closeModal();
         }
-    }, [editUserError, editingUser]);
+    }, [editUserError, editingUser, wasEditingUser, closeModal]);
 
     const edit = (user: User) => {
         dispatch(editUser(user));

@@ -26,7 +26,7 @@ const AddUserModal: React.FC<Props> = (props: Props) => {
         } else if (wasAddingUser) {
             closeModal();
         }
-    }, [addUserError, addingUser]);
+    }, [addUserError, addingUser, closeModal, wasAddingUser]);
 
     const add = (user: User) => {
         dispatch(addUser(user));
